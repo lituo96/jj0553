@@ -45,9 +45,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				do_action( 'woocommerce_after_shipping_rate', $method, $index );
 			?>
 		<?php elseif ( WC()->customer->has_calculated_shipping() ) : ?>
-			<?php echo apply_filters( is_cart() ? 'woocommerce_cart_no_shipping_available_html' : 'woocommerce_no_shipping_available_html', wpautop( __( 'There are no shipping methods available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'woocommerce' ) ) ); ?>
+			<?php echo apply_filters( is_cart() ? 'woocommerce_cart_no_shipping_available_html' : 'woocommerce_no_shipping_available_html', wpautop( __( '没有可用的装运方法。请确保您的地址已正确输入，或与我们联系，如果您需要任何帮助。', 'woocommerce' ) ) ); ?>
 		<?php elseif ( ! is_cart() ) : ?>
-			<?php echo wpautop( __( 'Enter your full address to see shipping costs.', 'woocommerce' ) ); ?>
+			<?php echo wpautop( __( '输入您的完整地址以查看运输成本。', 'woocommerce' ) ); ?>
 		<?php endif; ?>
 
 		<?php if ( $show_package_details ) : ?>

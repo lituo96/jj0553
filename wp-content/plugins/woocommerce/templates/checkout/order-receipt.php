@@ -23,20 +23,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <ul class="order_details">
 	<li class="order">
-		<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
+		<?php esc_html_e( '订单号：', 'woocommerce' ); ?>
 		<strong><?php echo esc_html( $order->get_order_number() ); ?></strong>
 	</li>
 	<li class="date">
-		<?php esc_html_e( 'Date:', 'woocommerce' ); ?>
+		<?php esc_html_e( '时间:', 'woocommerce' ); ?>
 		<strong><?php echo esc_html( wc_format_datetime( $order->get_date_created() ) ); ?></strong>
 	</li>
 	<li class="total">
-		<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
+		<?php esc_html_e( '合计:', 'woocommerce' ); ?>
 		<strong><?php echo wp_kses_post( $order->get_formatted_order_total() ); ?></strong>
 	</li>
 	<?php if ( $order->get_payment_method_title() ) : ?>
 	<li class="method">
-		<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
+		<?php esc_html_e( '支付方式:', 'woocommerce' ); ?>
 		<strong><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></strong>
 	</li>
 	<?php endif; ?>

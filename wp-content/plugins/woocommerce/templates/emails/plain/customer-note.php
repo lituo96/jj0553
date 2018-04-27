@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 echo "= " . $email_heading . " =\n\n";
 
-echo __( "Hello, a note has just been added to your order:", 'woocommerce' ) . "\n\n";
+echo __( "您好，刚刚在您的订单中添加了一张便条。:", 'woocommerce' ) . "\n\n";
 
 echo "----------\n\n";
 
@@ -30,7 +30,7 @@ echo wptexturize( $customer_note ) . "\n\n";
 
 echo "----------\n\n";
 
-echo __( "For your reference, your order details are shown below.", 'woocommerce' ) . "\n\n";
+echo __( "为了您的参考，您的订单细节如下所示。", 'woocommerce' ) . "\n\n";
 
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 

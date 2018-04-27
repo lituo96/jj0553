@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 					}
 				} else {
-					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', __( 'Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
+					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', __( '对不起，似乎没有可用的付款方法为您的位置。如果需要帮助，请与我们联系，或希望另行安排。', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
 				}
 				?>
 			</ul>

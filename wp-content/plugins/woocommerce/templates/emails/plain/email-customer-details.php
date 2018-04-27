@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-echo strtoupper( __( 'Customer details', 'woocommerce' ) ) . "\n\n";
+echo strtoupper( __( '客户详情', 'woocommerce' ) ) . "\n\n";
 
 foreach ( $fields as $field ) {
 	echo wp_kses_post( $field['label'] ) . ': ' . wp_kses_post( $field['value'] ) . "\n";

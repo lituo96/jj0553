@@ -27,9 +27,9 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <p><?php
 	if ( $partial_refund ) {
-		printf( __( 'Hi there. Your order on %s has been partially refunded.', 'woocommerce' ), get_option( 'blogname' ) );
+		printf( __( '你好。你方在 %s 上的订单已部分退还。', 'woocommerce' ), get_option( 'blogname' ) );
 	} else {
-		printf( __( 'Hi there. Your order on %s has been refunded.', 'woocommerce' ), get_option( 'blogname' ) );
+		printf( __( '你好。你的订单 %s 已退还。', 'woocommerce' ), get_option( 'blogname' ) );
 	}
 ?></p>
 

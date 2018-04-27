@@ -33,15 +33,15 @@ if ( ! is_ajax() ) {
 					wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 				}
 			} else {
-				echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
+				echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( '对不起，您的状态似乎没有可用的支付方法。如果需要帮助，请与我们联系，或希望另行安排。', 'woocommerce' ) : esc_html__( '请填写您的详细资料，以查看可用的付款方式。', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
 			}
 			?>
 		</ul>
 	<?php endif; ?>
 	<div class="form-row place-order">
 		<noscript>
-			<?php esc_html_e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ); ?>
-			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
+			<?php esc_html_e( '由于浏览器不支持JavaScript，或者它已被禁用，请确保单击<em>更新总计</em> 按钮之前，您的订单。如果你不能这么做，你可能会被指控的金额超过上述数额。', 'woocommerce' ); ?>
+			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( '更新总计', 'woocommerce' ); ?>"><?php esc_html_e( '更新总计', 'woocommerce' ); ?></button>
 		</noscript>
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>

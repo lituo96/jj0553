@@ -22,13 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 echo "= " . $email_heading . " =\n\n";
 
-echo sprintf( __( 'Thanks for creating an account on %1$s. Your username is %2$s', 'woocommerce' ), $blogname, '<strong>' . $user_login . '</strong>' ) . "\n\n";
+echo sprintf( __( '感谢您创建一个帐户 %1$s. 您的用户名是 %2$s', 'woocommerce' ), $blogname, '<strong>' . $user_login . '</strong>' ) . "\n\n";
 
 if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) {
-	echo sprintf( __( 'Your password is %s.', 'woocommerce' ), '<strong>' . $user_pass . '</strong>' ) . "\n\n";
+	echo sprintf( __( '您的密码是 %s.', 'woocommerce' ), '<strong>' . $user_pass . '</strong>' ) . "\n\n";
 }
 
-echo sprintf( __( 'You can access your account area to view your orders and change your password here: %s.', 'woocommerce' ), wc_get_page_permalink( 'myaccount' ) ) . "\n\n";
+echo sprintf( __( '您可以访问您的帐户区域查看您的订单和更改您的密码在这里: %s.', 'woocommerce' ), wc_get_page_permalink( 'myaccount' ) ) . "\n\n";
 
 echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 

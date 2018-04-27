@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( "Your order has been received and is now being processed. Your order details are shown below for your reference:", 'woocommerce' ); ?></p>
+<p><?php _e( "您的订单已经收到并正在处理中。您的订单详情如下所示，仅供参考。:", 'woocommerce' ); ?></p>
 
 <?php
 
